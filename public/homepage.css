@@ -1,0 +1,91 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+}
+
+h1 {
+  color: #ffffff;
+  border-bottom: 2px solid #404040;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.message {
+  background-color: #333333;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+.message:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.message p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.message p:first-child {
+  color: #b0b0b0;
+  font-size: 0.9em;
+}
+
+.message p:last-of-type {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+button {
+  background-color: #505050;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #606060;
+}
+
+h2 {
+  margin-top: 40px;
+}
+
+h2 button {
+  background-color: #4a4a4a;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+h2 button:hover {
+  background-color: #5a5a5a;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .message {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
