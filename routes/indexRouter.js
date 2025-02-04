@@ -2,20 +2,7 @@ const { format } = require("date-fns");
 const { Router } = require("express");
 const indexRouter = Router();
 
-const messages = [
-  {
-    id: 1,
-    text: "Hi there!",
-    user: "Amando",
-    added: format(new Date(), "MMMM dd, yyyy"),
-  },
-  {
-    id: 2,
-    text: "Hello World",
-    user: "Charles",
-    added: format(new Date(), "MMMM dd, yyyy"),
-  },
-];
+const messages = [];
 
 indexRouter.get("/", (req, res) => {
   try {
