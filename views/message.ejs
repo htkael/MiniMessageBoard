@@ -6,7 +6,13 @@
   <body>
     <h1>Details:</h1>
     <span>Author - <strong><%= message.user %></strong></span>
-    <span>Date sent - <strong><%= message.added %></strong></span>
+    <span
+      >Date sent -
+      <strong
+        ><%= message.added.toLocaleDateString('en-US', { year: 'numeric', month:
+        'long', day: 'numeric' }) %></strong
+      ></span
+    >
     <span>Content - <strong><%= message.text %></strong></span>
     <a href="/"><button>Back to Home</button></a>
   </body>

@@ -1,13 +1,9 @@
 const { Router } = require("express");
 const newMessageRouter = Router();
+const messageControler = require("../controllers/messageController");
 
-newMessageRouter.get("/", (req, res) => {
-  try {
-    res.render("form");
-  } catch (error) {
-    console.error("Error retrieving new message form");
-    res.status(500).send("Internal Server Error");
-  }
-});
+newMessageRouter.get("/", messageControler.getForm);
+
+newMessageRouter.post("/", messageControler.createMessage);
 
 module.exports = newMessageRouter;
