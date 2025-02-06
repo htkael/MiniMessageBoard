@@ -21,11 +21,12 @@ VALUES
     ('Rachel', 'Has anyone tried Railway for deployment?', '2025-02-06'),
     ('David', 'Looking forward to learning from everyone here', '2025-02-06'),
     ('Sophie', 'Hello from Seattle!', '2025-02-06')
+    ON CONFLICT DO NOTHING;
 `;
 
 async function main() {
   const client = new Client({
-    connectionString: process.env.DB_URL,
+    connectionString: process.env.DATABASE_URL,
     ssl: {
       rejectUnauthorized: false,
     },
